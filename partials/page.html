@@ -1,0 +1,28 @@
+<div class="u-mbm" ng-include="'partials/header.html'"></div>
+
+
+<div class="go-back" title="Retour à l'acceuil" back>
+  <i class="fa fa-arrow-left"></i> /
+</div>
+
+<div class="container u-mbm">
+
+
+  <div class="row">
+
+
+    <div class="col-md-12">
+
+      <h2>{{title}}</h2>
+
+      <div ng-show="thubmnailUrl"><img class="img-center" ng-src="{{thubmnailUrl}}" /></div>
+
+      <div ng-bind-html="content | renderHTMLCorrectly"></div>
+
+    </div>
+
+
+
+  </div> <!-- row -->
+
+</div> <!-- container -->

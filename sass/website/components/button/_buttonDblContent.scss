@@ -1,0 +1,24 @@
+.button--dblcontent{
+  font-family: $base-font-family;
+  font-weight: 500;
+  height: 40px;
+  max-width: 250px;
+  display: block;
+  margin: auto;
+  border-radius: initial;
+
+  &:hover{
+    .hovered{bottom: 20px;}
+  }
+}
+
+
+.button--ghost{
+  color: #FFF;
+  border: 1px solid #FFF;
+  background-color: transparent;
+  &:hover{
+    color: #FFF;
+    background-color: rgba(88, 88, 88, 0.17);
+  }
+}
