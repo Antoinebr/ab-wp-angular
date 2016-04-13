@@ -3,14 +3,15 @@
     <a href="#/">
       <img class="menu-logo img-responsive" style="height:35px;" src="http://localhost:8888/wp-lab/wp-content/uploads/2016/03/logo.svg">
     </a>
-    <nav class="menu-haut">
+    <nav class="menu-haut" ng-controller="MenusCtrl">
+
+
       <ul class="listReset">
 
-        <li><a href="#/page/home">Page</a></li>
-        <li><a href="#/home">Blog</a></li>
-
+        <li ng-repeat="item in menu"><a href="{{item.url}}">{{item.title}}</a></li>
 
       </ul>
+
     </nav>
 
   </div>
