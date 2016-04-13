@@ -9,7 +9,22 @@ app.factory('Menu', function ($http, $q){
         $http.get('http://localhost:8888/wp-lab/wp-json/wp-api-menus/v2/menus/4')
         .success(function(data,status){
 
+
+
+          /**
+          *
+          *  Replace les url de l'objet menu
+          *
+          */
+          var i;
+          for(i in data.items){
+            if(data.items[i].type_label == "Page"){
+              data.items[i].url = data.items[i].url.replace('wp-lab','wp-angular/#/page');
+            }
+          }
+
           factory.menu = data;
+
 
           //console.log(data);
           deferred.resolve(factory.menu);
