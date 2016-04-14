@@ -18,9 +18,18 @@ app.factory('Menu', function ($http, $q){
           */
           var i;
           for(i in data.items){
+
+            // Replace for Pages
             if(data.items[i].type_label == "Page"){
+
               data.items[i].url = data.items[i].url.replace('wp-lab','wp-angular/#/page');
+
+              // Replace for Posts
+            }else if(data.items[i].type_label == "Article"){
+
+              data.items[i].url = data.items[i].url.replace('wp-lab','wp-angular/#/single');
             }
+
           }
 
           factory.menu = data;
