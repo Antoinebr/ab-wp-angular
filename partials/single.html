@@ -1,9 +1,15 @@
-<div class="u-mbm" ng-include="'partials/header.html'"></div>
+<div class="u-mbs" ng-include="'partials/header.html'"></div>
 
 
 <div class="go-back" title="Retour à l'acceuil" back>
   <i class="fa fa-arrow-left"></i> /
 </div>
+
+<div class="banner-promo clearfix" style="background-image:url('{{thubmnailUrl}}')">
+  <p class="txtXL">{{title}}</p>
+</div>
+
+
 
 <div class="container u-mbm">
 
@@ -13,8 +19,8 @@
 
     <div class="col-md-12">
 
-      <h2>{{title}}</h2>
-      <img class="img-center" ng-src="{{thubmnailUrl}}" />
+
+
       <div ng-bind-html="content | renderHTMLCorrectly"></div>
 
     </div>

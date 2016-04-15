@@ -4631,7 +4631,7 @@ blockquote.right {
 /**
 *
 *  Website
-* 
+*
 */
 /* line 1, ../sass/website/components/button/_buttonDblContent.scss */
 .button--dblcontent {
@@ -4718,6 +4718,29 @@ blockquote.right {
     border-radius: 200px;
     z-index: 2;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+  }
+}
+/* line 2, ../sass/website/components/menu/_menu.scss */
+.back-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 7, ../sass/website/components/menu/_menu.scss */
+  .responsive-icon {
+    left: initial;
+    right: 10px;
+  }
+
+  /* line 12, ../sass/website/components/menu/_menu.scss */
+  .back-icon {
+    display: block;
+    position: fixed;
+    left: 10px;
+    top: 16px;
+    width: 32px;
+    z-index: 8;
   }
 }
 /**
