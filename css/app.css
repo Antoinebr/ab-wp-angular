@@ -3681,8 +3681,9 @@ input[type="checkbox"] + label {
   background-size: cover;
   height: 400px;
   width: 100%;
+  background-color: #E75D3F;
 }
-/* line 14, ../sass/components/banner/_promo-banner.scss */
+/* line 15, ../sass/components/banner/_promo-banner.scss */
 .banner-promo .txtXL {
   color: #FFF;
   text-transform: uppercase;
